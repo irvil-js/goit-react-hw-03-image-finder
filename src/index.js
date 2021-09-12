@@ -1,14 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import './index.css';
-// import App from './App';
-// import reportWebVitals from './reportWebVitals';
+import App from './App';
+import './index.css';
+import 'modern-normalize/modern-normalize.css';
 
-const link = React.createElement(
-  "a",
-  { href: "reactjs.org", trget: "_blank" },
-  "ССылка"
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root'),
 );
-
-console.log(link);
-
